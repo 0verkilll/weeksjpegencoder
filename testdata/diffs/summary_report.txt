@@ -1,0 +1,15 @@
+================================================================================
+JPEG Byte-Level Compatibility Summary Report
+================================================================================
+Generated: 2026-06-29T18:28:37-07:00
+
+OVERALL STATISTICS
+------------------
+Total Tests:  240
+Passed:       240 (100.0%)
+Failed:       0 (0.0%)
+
+DIFFERENCES BY SEGMENT (All Tests Combined)
+-------------------------------------------
+  TOTAL          :      0 total
+

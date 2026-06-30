@@ -1,0 +1,1032 @@
+================================================================================
+JPEG Byte-Level Diff Report: quadrant_256x256_q100_420
+================================================================================
+Generated: 2026-05-13T22:58:27-07:00
+
+FILE INFORMATION
+----------------
+Java Reference: quadrant_256x256_q100_420.jpg (Java reference)
+Go Output:      Go weeksjpegencoder output
+Java Size:      79099 bytes
+Go Size:        36801 bytes
+Size Delta:     -42298 bytes
+
+SHA-256 CHECKSUMS
+-----------------
+Java: 7e7cca26565aef95295da21709adf02e2873741aec96039596b50fbc38bfc2bc
+Go:   eb1e9b9fbbcabe13dd36accb9880f5397a1a9bfa7467932476c246c0833cadba
+Status: MISMATCH
+
+DIFFERENCES BY SEGMENT (Prioritized)
+------------------------------------
+Total Differences: 77862
+
+  APP0           :     1 differences (  0.0%)
+  DHT            :     3 differences (  0.0%)
+  EntropyData    : 77856 differences (100.0%)
+  EOI            :     2 differences (  0.0%)
+
+DETAILED DIFFERENCES
+--------------------
+(Showing first 100 differences with hex context for first 20)
+
+Difference #1
+  File Offset:    0x0000000C (12)
+  Expected:       0x01
+  Actual:         0x00
+  Segment:        APP0
+  Segment Offset: 0x000A (10)
+  Description:    JFIF Application marker (version, density, thumbnail)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0000 - 0x0020) ---
+    00000000  FF D8 FF E0 00 10 4A 46  49 46 00 01 01 00 00 01  |......JFIF......|
+    00000010  00 01 00 00 FF FE 00 41  4A 50 45 47 20 45 6E 63  |.......AJPEG Enc|
+    --- Actual (Go) (offset 0x0000 - 0x0020) ---
+    00000000  FF D8 FF E0 00 10 4A 46  49 46 00 01 00 00 00 01  |......JFIF......|
+    00000010  00 01 00 00 FF FE 00 41  4A 50 45 47 20 45 6E 63  |.......AJPEG Enc|
+
+Difference #2
+  File Offset:    0x00000111 (273)
+  Expected:       0x00
+  Actual:         0x10
+  Segment:        DHT
+  Segment Offset: 0x0021 (33)
+  Description:    Define Huffman Table (DC/AC luminance and chrominance tables)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0100 - 0x0130) ---
+    00000100  00 00 00 00 00 00 01 02  03 04 05 06 07 08 09 0A  |................|
+    00000110  0B 00 00 02 01 03 03 02  04 03 05 05 04 04 00 00  |................|
+    00000120  01 7D 01 02 03 00 04 11  05 12 21 31 41 06 13 51  |.}........!1A..Q|
+    --- Actual (Go) (offset 0x0100 - 0x0130) ---
+    00000100  00 00 00 00 00 00 01 02  03 04 05 06 07 08 09 0A  |................|
+    00000110  0B 10 00 02 01 03 03 02  04 03 05 05 04 04 00 00  |................|
+    00000120  01 7D 01 02 03 00 04 11  05 12 21 31 41 06 13 51  |.}........!1A..Q|
+
+Difference #3
+  File Offset:    0x000001C4 (452)
+  Expected:       0x00
+  Actual:         0x01
+  Segment:        DHT
+  Segment Offset: 0x00D4 (212)
+  Description:    Define Huffman Table (DC/AC luminance and chrominance tables)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x01B0 - 0x01E0) ---
+    000001B0  E1 E2 E3 E4 E5 E6 E7 E8  E9 EA F1 F2 F3 F4 F5 F6  |................|
+    000001C0  F7 F8 F9 FA 00 00 03 01  01 01 01 01 01 01 01 01  |................|
+    000001D0  00 00 00 00 00 00 01 02  03 04 05 06 07 08 09 0A  |................|
+    --- Actual (Go) (offset 0x01B0 - 0x01E0) ---
+    000001B0  E1 E2 E3 E4 E5 E6 E7 E8  E9 EA F1 F2 F3 F4 F5 F6  |................|
+    000001C0  F7 F8 F9 FA 01 00 03 01  01 01 01 01 01 01 01 01  |................|
+    000001D0  00 00 00 00 00 00 01 02  03 04 05 06 07 08 09 0A  |................|
+
+Difference #4
+  File Offset:    0x000001E1 (481)
+  Expected:       0x00
+  Actual:         0x11
+  Segment:        DHT
+  Segment Offset: 0x00F1 (241)
+  Description:    Define Huffman Table (DC/AC luminance and chrominance tables)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x01D0 - 0x0200) ---
+    000001D0  00 00 00 00 00 00 01 02  03 04 05 06 07 08 09 0A  |................|
+    000001E0  0B 00 00 02 01 02 04 04  03 04 07 05 04 04 00 01  |................|
+    000001F0  02 77 00 01 02 03 11 04  05 21 31 06 12 41 51 07  |.w.......!1..AQ.|
+    --- Actual (Go) (offset 0x01D0 - 0x0200) ---
+    000001D0  00 00 00 00 00 00 01 02  03 04 05 06 07 08 09 0A  |................|
+    000001E0  0B 11 00 02 01 02 04 04  03 04 07 05 04 04 00 01  |................|
+    000001F0  02 77 00 01 02 03 11 04  05 21 31 06 12 41 51 07  |.w.......!1..AQ.|
+
+Difference #5
+  File Offset:    0x000002A2 (674)
+  Expected:       0xFA
+  Actual:         0xFE
+  Segment:        EntropyData
+  Segment Offset: 0x0000 (0)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #6
+  File Offset:    0x000002A3 (675)
+  Expected:       0x82
+  Actual:         0x27
+  Segment:        EntropyData
+  Segment Offset: 0x0001 (1)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #7
+  File Offset:    0x000002A4 (676)
+  Expected:       0x1B
+  Actual:         0xED
+  Segment:        EntropyData
+  Segment Offset: 0x0002 (2)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #8
+  File Offset:    0x000002A5 (677)
+  Expected:       0x33
+  Actual:         0x74
+  Segment:        EntropyData
+  Segment Offset: 0x0003 (3)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #9
+  File Offset:    0x000002A6 (678)
+  Expected:       0xC7
+  Actual:         0xA3
+  Segment:        EntropyData
+  Segment Offset: 0x0004 (4)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #10
+  File Offset:    0x000002A7 (679)
+  Expected:       0xC8
+  Actual:         0xC7
+  Segment:        EntropyData
+  Segment Offset: 0x0005 (5)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #11
+  File Offset:    0x000002A8 (680)
+  Expected:       0x7F
+  Actual:         0xCA
+  Segment:        EntropyData
+  Segment Offset: 0x0006 (6)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #12
+  File Offset:    0x000002A9 (681)
+  Expected:       0xE5
+  Actual:         0x6B
+  Segment:        EntropyData
+  Segment Offset: 0x0007 (7)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #13
+  File Offset:    0x000002AA (682)
+  Expected:       0xE7
+  Actual:         0xA6
+  Segment:        EntropyData
+  Segment Offset: 0x0008 (8)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #14
+  File Offset:    0x000002AB (683)
+  Expected:       0xFE
+  Actual:         0xB4
+  Segment:        EntropyData
+  Segment Offset: 0x0009 (9)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #15
+  File Offset:    0x000002AC (684)
+  Expected:       0x62
+  Actual:         0xD2
+  Segment:        EntropyData
+  Segment Offset: 0x000A (10)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #16
+  File Offset:    0x000002AD (685)
+  Expected:       0x7F
+  Actual:         0x8F
+  Segment:        EntropyData
+  Segment Offset: 0x000B (11)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #17
+  File Offset:    0x000002AE (686)
+  Expected:       0xF6
+  Actual:         0x1F
+  Segment:        EntropyData
+  Segment Offset: 0x000C (12)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #18
+  File Offset:    0x000002AF (687)
+  Expected:       0x28
+  Actual:         0x29
+  Segment:        EntropyData
+  Segment Offset: 0x000D (13)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    --- Actual (Go) (offset 0x0290 - 0x02C0) ---
+    00000290  F7 F8 F9 FA FF DA 00 0C  03 01 00 02 11 03 11 00  |................|
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+
+Difference #19
+  File Offset:    0x000002B0 (688)
+  Expected:       0xFF
+  Actual:         0xAE
+  Segment:        EntropyData
+  Segment Offset: 0x000E (14)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x02A0 - 0x02D0) ---
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    000002C0  FF 00 62 7F FD 52 4A E9  61 B3 E9 FB BF F9 F9 FF  |..b..RJ.a.......|
+    --- Actual (Go) (offset 0x02A0 - 0x02D0) ---
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+    000002C0  DC BC 66 71 BF BD F8 FA  1F 9C 70 DE 7D FC 3F 7F  |..fq......p.}.?.|
+
+Difference #20
+  File Offset:    0x000002B1 (689)
+  Expected:       0x00
+  Actual:         0x96
+  Segment:        EntropyData
+  Segment Offset: 0x000F (15)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+  Hex Dump Context:
+    --- Expected (Java) (offset 0x02A0 - 0x02D0) ---
+    000002A0  3F 00 FA 82 1B 33 C7 C8  7F E5 E7 FE 62 7F F6 28  |?....3......b..(|
+    000002B0  FF 00 D5 24 AE 9A 1B 33  F2 FC 87 FE 5E BF E6 27  |...$...3....^..'|
+    000002C0  FF 00 62 7F FD 52 4A E9  61 B3 E9 FB BF F9 F9 FF  |..b..RJ.a.......|
+    --- Actual (Go) (offset 0x02A0 - 0x02D0) ---
+    000002A0  3F 00 FE 27 ED 74 A3 C7  CA 6B A6 B4 D2 8F 1F 29  |?..'.t...k.....)|
+    000002B0  AE 96 D7 4A E9 F2 FE 95  D3 5A 69 5D 3E 5F D2 BF  |...J.....Zi]>_..|
+    000002C0  DC BC 66 71 BF BD F8 FA  1F 9C 70 DE 7D FC 3F 7F  |..fq......p.}.?.|
+
+Difference #21
+  File Offset:    0x000002B2 (690)
+  Expected:       0xD5
+  Actual:         0xD7
+  Segment:        EntropyData
+  Segment Offset: 0x0010 (16)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #22
+  File Offset:    0x000002B3 (691)
+  Expected:       0x24
+  Actual:         0x4A
+  Segment:        EntropyData
+  Segment Offset: 0x0011 (17)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #23
+  File Offset:    0x000002B4 (692)
+  Expected:       0xAE
+  Actual:         0xE9
+  Segment:        EntropyData
+  Segment Offset: 0x0012 (18)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #24
+  File Offset:    0x000002B5 (693)
+  Expected:       0x9A
+  Actual:         0xF2
+  Segment:        EntropyData
+  Segment Offset: 0x0013 (19)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #25
+  File Offset:    0x000002B6 (694)
+  Expected:       0x1B
+  Actual:         0xFE
+  Segment:        EntropyData
+  Segment Offset: 0x0014 (20)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #26
+  File Offset:    0x000002B7 (695)
+  Expected:       0x33
+  Actual:         0x95
+  Segment:        EntropyData
+  Segment Offset: 0x0015 (21)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #27
+  File Offset:    0x000002B8 (696)
+  Expected:       0xF2
+  Actual:         0xD3
+  Segment:        EntropyData
+  Segment Offset: 0x0016 (22)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #28
+  File Offset:    0x000002B9 (697)
+  Expected:       0xFC
+  Actual:         0x5A
+  Segment:        EntropyData
+  Segment Offset: 0x0017 (23)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #29
+  File Offset:    0x000002BA (698)
+  Expected:       0x87
+  Actual:         0x69
+  Segment:        EntropyData
+  Segment Offset: 0x0018 (24)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #30
+  File Offset:    0x000002BB (699)
+  Expected:       0xFE
+  Actual:         0x5D
+  Segment:        EntropyData
+  Segment Offset: 0x0019 (25)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #31
+  File Offset:    0x000002BC (700)
+  Expected:       0x5E
+  Actual:         0x3E
+  Segment:        EntropyData
+  Segment Offset: 0x001A (26)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #32
+  File Offset:    0x000002BD (701)
+  Expected:       0xBF
+  Actual:         0x5F
+  Segment:        EntropyData
+  Segment Offset: 0x001B (27)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #33
+  File Offset:    0x000002BE (702)
+  Expected:       0xE6
+  Actual:         0xD2
+  Segment:        EntropyData
+  Segment Offset: 0x001C (28)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #34
+  File Offset:    0x000002BF (703)
+  Expected:       0x27
+  Actual:         0xBF
+  Segment:        EntropyData
+  Segment Offset: 0x001D (29)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #35
+  File Offset:    0x000002C0 (704)
+  Expected:       0xFF
+  Actual:         0xDC
+  Segment:        EntropyData
+  Segment Offset: 0x001E (30)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #36
+  File Offset:    0x000002C1 (705)
+  Expected:       0x00
+  Actual:         0xBC
+  Segment:        EntropyData
+  Segment Offset: 0x001F (31)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #37
+  File Offset:    0x000002C2 (706)
+  Expected:       0x62
+  Actual:         0x66
+  Segment:        EntropyData
+  Segment Offset: 0x0020 (32)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #38
+  File Offset:    0x000002C3 (707)
+  Expected:       0x7F
+  Actual:         0x71
+  Segment:        EntropyData
+  Segment Offset: 0x0021 (33)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #39
+  File Offset:    0x000002C4 (708)
+  Expected:       0xFD
+  Actual:         0xBF
+  Segment:        EntropyData
+  Segment Offset: 0x0022 (34)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #40
+  File Offset:    0x000002C5 (709)
+  Expected:       0x52
+  Actual:         0xBD
+  Segment:        EntropyData
+  Segment Offset: 0x0023 (35)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #41
+  File Offset:    0x000002C6 (710)
+  Expected:       0x4A
+  Actual:         0xF8
+  Segment:        EntropyData
+  Segment Offset: 0x0024 (36)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #42
+  File Offset:    0x000002C7 (711)
+  Expected:       0xE9
+  Actual:         0xFA
+  Segment:        EntropyData
+  Segment Offset: 0x0025 (37)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #43
+  File Offset:    0x000002C8 (712)
+  Expected:       0x61
+  Actual:         0x1F
+  Segment:        EntropyData
+  Segment Offset: 0x0026 (38)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #44
+  File Offset:    0x000002C9 (713)
+  Expected:       0xB3
+  Actual:         0x9C
+  Segment:        EntropyData
+  Segment Offset: 0x0027 (39)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #45
+  File Offset:    0x000002CA (714)
+  Expected:       0xE9
+  Actual:         0x70
+  Segment:        EntropyData
+  Segment Offset: 0x0028 (40)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #46
+  File Offset:    0x000002CB (715)
+  Expected:       0xFB
+  Actual:         0xDE
+  Segment:        EntropyData
+  Segment Offset: 0x0029 (41)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #47
+  File Offset:    0x000002CC (716)
+  Expected:       0xBF
+  Actual:         0x7D
+  Segment:        EntropyData
+  Segment Offset: 0x002A (42)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #48
+  File Offset:    0x000002CD (717)
+  Expected:       0xF9
+  Actual:         0xFC
+  Segment:        EntropyData
+  Segment Offset: 0x002B (43)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #49
+  File Offset:    0x000002CE (718)
+  Expected:       0xF9
+  Actual:         0x3F
+  Segment:        EntropyData
+  Segment Offset: 0x002C (44)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #50
+  File Offset:    0x000002CF (719)
+  Expected:       0xFF
+  Actual:         0x7F
+  Segment:        EntropyData
+  Segment Offset: 0x002D (45)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #51
+  File Offset:    0x000002D0 (720)
+  Expected:       0x00
+  Actual:         0xB7
+  Segment:        EntropyData
+  Segment Offset: 0x002E (46)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #52
+  File Offset:    0x000002D1 (721)
+  Expected:       0x98
+  Actual:         0x5F
+  Segment:        EntropyData
+  Segment Offset: 0x002F (47)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #53
+  File Offset:    0x000002D2 (722)
+  Expected:       0x9F
+  Actual:         0x43
+  Segment:        EntropyData
+  Segment Offset: 0x0030 (48)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #54
+  File Offset:    0x000002D3 (723)
+  Expected:       0xFD
+  Actual:         0x9A
+  Segment:        EntropyData
+  Segment Offset: 0x0031 (49)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #55
+  File Offset:    0x000002D4 (724)
+  Expected:       0x8A
+  Actual:         0xB4
+  Segment:        EntropyData
+  Segment Offset: 0x0032 (50)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #56
+  File Offset:    0x000002D5 (725)
+  Expected:       0x3F
+  Actual:         0xD2
+  Segment:        EntropyData
+  Segment Offset: 0x0033 (51)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #57
+  File Offset:    0x000002D6 (726)
+  Expected:       0xF5
+  Actual:         0x8F
+  Segment:        EntropyData
+  Segment Offset: 0x0034 (52)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #58
+  File Offset:    0x000002D7 (727)
+  Expected:       0x48
+  Actual:         0x1F
+  Segment:        EntropyData
+  Segment Offset: 0x0035 (53)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #59
+  File Offset:    0x000002D8 (728)
+  Expected:       0x2B
+  Actual:         0x29
+  Segment:        EntropyData
+  Segment Offset: 0x0036 (54)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #60
+  File Offset:    0x000002D9 (729)
+  Expected:       0xA6
+  Actual:         0xAE
+  Segment:        EntropyData
+  Segment Offset: 0x0037 (55)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #61
+  File Offset:    0x000002DA (730)
+  Expected:       0x86
+  Actual:         0x9E
+  Segment:        EntropyData
+  Segment Offset: 0x0038 (56)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #62
+  File Offset:    0x000002DB (731)
+  Expected:       0xCF
+  Actual:         0xD3
+  Segment:        EntropyData
+  Segment Offset: 0x0039 (57)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #63
+  File Offset:    0x000002DC (732)
+  Expected:       0xEE
+  Actual:         0x4A
+  Segment:        EntropyData
+  Segment Offset: 0x003A (58)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #64
+  File Offset:    0x000002DD (733)
+  Expected:       0xFE
+  Actual:         0x3C
+  Segment:        EntropyData
+  Segment Offset: 0x003B (59)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #65
+  File Offset:    0x000002DE (734)
+  Expected:       0xEF
+  Actual:         0x7C
+  Segment:        EntropyData
+  Segment Offset: 0x003C (60)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #66
+  File Offset:    0x000002DF (735)
+  Expected:       0xFE
+  Actual:         0xA6
+  Segment:        EntropyData
+  Segment Offset: 0x003D (61)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #67
+  File Offset:    0x000002E0 (736)
+  Expected:       0x7E
+  Actual:         0xBA
+  Segment:        EntropyData
+  Segment Offset: 0x003E (62)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #68
+  File Offset:    0x000002E1 (737)
+  Expected:       0xBF
+  Actual:         0x4B
+  Segment:        EntropyData
+  Segment Offset: 0x003F (63)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #69
+  File Offset:    0x000002E2 (738)
+  Expected:       0xE6
+  Actual:         0x4D
+  Segment:        EntropyData
+  Segment Offset: 0x0040 (64)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #70
+  File Offset:    0x000002E3 (739)
+  Expected:       0x27
+  Actual:         0x2B
+  Segment:        EntropyData
+  Segment Offset: 0x0041 (65)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #71
+  File Offset:    0x000002E4 (740)
+  Expected:       0xFF
+  Actual:         0xA7
+  Segment:        EntropyData
+  Segment Offset: 0x0042 (66)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #72
+  File Offset:    0x000002E5 (741)
+  Expected:       0x00
+  Actual:         0xCB
+  Segment:        EntropyData
+  Segment Offset: 0x0043 (67)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #73
+  File Offset:    0x000002E6 (742)
+  Expected:       0x62
+  Actual:         0xFA
+  Segment:        EntropyData
+  Segment Offset: 0x0044 (68)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #74
+  File Offset:    0x000002E7 (743)
+  Expected:       0x7F
+  Actual:         0x57
+  Segment:        EntropyData
+  Segment Offset: 0x0045 (69)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #75
+  File Offset:    0x000002E8 (744)
+  Expected:       0xFD
+  Actual:         0x4D
+  Segment:        EntropyData
+  Segment Offset: 0x0046 (70)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #76
+  File Offset:    0x000002E9 (745)
+  Expected:       0x52
+  Actual:         0x69
+  Segment:        EntropyData
+  Segment Offset: 0x0047 (71)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #77
+  File Offset:    0x000002EA (746)
+  Expected:       0x0A
+  Actual:         0xA5
+  Segment:        EntropyData
+  Segment Offset: 0x0048 (72)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #78
+  File Offset:    0x000002EB (747)
+  Expected:       0xFF
+  Actual:         0x74
+  Segment:        EntropyData
+  Segment Offset: 0x0049 (73)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #79
+  File Offset:    0x000002EC (748)
+  Expected:       0x00
+  Actual:         0xF9
+  Segment:        EntropyData
+  Segment Offset: 0x004A (74)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #80
+  File Offset:    0x000002ED (749)
+  Expected:       0xD7
+  Actual:         0x7F
+  Segment:        EntropyData
+  Segment Offset: 0x004B (75)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #81
+  File Offset:    0x000002EE (750)
+  Expected:       0x2E
+  Actual:         0x4A
+  Segment:        EntropyData
+  Segment Offset: 0x004C (76)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #82
+  File Offset:    0x000002EF (751)
+  Expected:       0xBE
+  Actual:         0xF9
+  Segment:        EntropyData
+  Segment Offset: 0x004D (77)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #83
+  File Offset:    0x000002F0 (752)
+  Expected:       0x3B
+  Actual:         0x4C
+  Segment:        EntropyData
+  Segment Offset: 0x004E (78)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #84
+  File Offset:    0x000002F1 (753)
+  Expected:       0xE2
+  Actual:         0x66
+  Segment:        EntropyData
+  Segment Offset: 0x004F (79)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #85
+  File Offset:    0x000002F2 (754)
+  Expected:       0xFD
+  Actual:         0x71
+  Segment:        EntropyData
+  Segment Offset: 0x0050 (80)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #86
+  File Offset:    0x000002F3 (755)
+  Expected:       0xE7
+  Actual:         0xBF
+  Segment:        EntropyData
+  Segment Offset: 0x0051 (81)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #87
+  File Offset:    0x000002F4 (756)
+  Expected:       0xFD
+  Actual:         0xBD
+  Segment:        EntropyData
+  Segment Offset: 0x0052 (82)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #88
+  File Offset:    0x000002F5 (757)
+  Expected:       0x02
+  Actual:         0xF8
+  Segment:        EntropyData
+  Segment Offset: 0x0053 (83)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #89
+  File Offset:    0x000002F6 (758)
+  Expected:       0x7F
+  Actual:         0xFA
+  Segment:        EntropyData
+  Segment Offset: 0x0054 (84)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #90
+  File Offset:    0x000002F7 (759)
+  Expected:       0xCC
+  Actual:         0x1F
+  Segment:        EntropyData
+  Segment Offset: 0x0055 (85)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #91
+  File Offset:    0x000002F8 (760)
+  Expected:       0xAB
+  Actual:         0xD0
+  Segment:        EntropyData
+  Segment Offset: 0x0056 (86)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #92
+  File Offset:    0x000002F9 (761)
+  Expected:       0xFE
+  Actual:         0x1C
+  Segment:        EntropyData
+  Segment Offset: 0x0057 (87)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #93
+  File Offset:    0x000002FA (762)
+  Expected:       0xCB
+  Actual:         0x35
+  Segment:        EntropyData
+  Segment Offset: 0x0058 (88)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #94
+  File Offset:    0x000002FB (763)
+  Expected:       0x5F
+  Actual:         0x9F
+  Segment:        EntropyData
+  Segment Offset: 0x0059 (89)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #95
+  File Offset:    0x000002FC (764)
+  Expected:       0xFA
+  Actual:         0x7F
+  Segment:        EntropyData
+  Segment Offset: 0x005A (90)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #96
+  File Offset:    0x000002FD (765)
+  Expected:       0xBD
+  Actual:         0x0F
+  Segment:        EntropyData
+  Segment Offset: 0x005B (91)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #97
+  File Offset:    0x000002FE (766)
+  Expected:       0x27
+  Actual:         0xDF
+  Segment:        EntropyData
+  Segment Offset: 0x005C (92)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #98
+  File Offset:    0x000002FF (767)
+  Expected:       0xFD
+  Actual:         0xED
+  Segment:        EntropyData
+  Segment Offset: 0x005D (93)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #99
+  File Offset:    0x00000300 (768)
+  Expected:       0xDA
+  Actual:         0xD7
+  Segment:        EntropyData
+  Segment Offset: 0x005E (94)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+Difference #100
+  File Offset:    0x00000301 (769)
+  Expected:       0xE5
+  Actual:         0xD0
+  Segment:        EntropyData
+  Segment Offset: 0x005F (95)
+  Description:    Entropy-coded data (Huffman-encoded DCT coefficients)
+
+
+... and 77762 more differences not shown

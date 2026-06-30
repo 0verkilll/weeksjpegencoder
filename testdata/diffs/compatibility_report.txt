@@ -1,0 +1,16 @@
+=== JPEG Byte-Level Compatibility Report ===
+
+Total Tests: 240
+Passed:      240 (100.0%)
+Failed:      0 (0.0%)
+Skipped:     0 (0.0%)
+
+=== Results by Pattern ===
+
+solid: 40 passed, 0 failed, 0 skipped
+horizontal_gradient: 40 passed, 0 failed, 0 skipped
+vertical_gradient: 40 passed, 0 failed, 0 skipped
+diagonal_gradient: 40 passed, 0 failed, 0 skipped
+checkerboard: 40 passed, 0 failed, 0 skipped
+quadrant: 40 passed, 0 failed, 0 skipped
+

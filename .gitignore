@@ -1,0 +1,187 @@
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Compiled command/example binaries (extensionless, match dir name)
+/cmd/f5jar_compare/f5jar_compare
+/cmd/regen_references/regen_references
+/examples/basic/basic
+/examples/custom_comment/custom_comment
+/examples/metadata/metadata
+/examples/subsampling/subsampling
+
+# Java build artifacts (extracted from docs/james-weeks-encoder-f5.jar or
+# compiled from the .java sources; regenerate with unzip + javac).
+*.class
+cmd/*/classes/
+
+# Go coverage files
+coverage.out
+coverage.txt
+coverage.html
+*_coverage.html
+*.coverprofile
+
+# Go workspace
+go.work
+go.work.sum
+
+# Dependency directories
+vendor/
+
+# Go module cache
+/go.sum.bak
+
+# Air - live reload (if used)
+tmp/
+
+# Build directories
+bin/
+dist/
+build/
+out/
+
+# GoReleaser
+.goreleaser.yml.bak
+dist/
+
+# IDE: JetBrains (GoLand, IntelliJ IDEA)
+.idea/*
+!.idea/runConfigurations/
+*.iml
+*.iws
+*.ipr
+
+# IDE: Visual Studio Code
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+*.code-workspace
+
+# IDE: Vim
+*.swp
+*.swo
+*.swn
+*~
+.*.sw[a-p]
+
+# IDE: Emacs
+\#*\#
+.\#*
+
+# IDE: Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# IDE: Eclipse
+.project
+.classpath
+.settings/
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.cache
+
+# Test cache
+*.test.cache
+
+# Profiling data
+*.pprof
+cpu.prof
+mem.prof
+block.prof
+mutex.prof
+trace.out
+
+# Benchmarks
+*.bench
+
+# Archive files (often accidentally added)
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# SQLite databases (if used for testing)
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificate files (should not be in repo)
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# Config overrides (if any)
+config.local.*
+*-local.yaml
+*-local.yml
+*-local.json
+
+# OS generated files
+._.DS_Store
+**/.DS_Store
+
+# Temporary setup scripts (delete after deployment)
+tmp/
+
+# Project documentation (optional - uncomment to exclude)

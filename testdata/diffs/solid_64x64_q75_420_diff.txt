@@ -1,0 +1,28 @@
+================================================================================
+JPEG Byte-Level Diff Report: solid_64x64_q75_420
+================================================================================
+Generated: 2026-06-29T18:28:37-07:00
+
+FILE INFORMATION
+----------------
+Java Reference: solid_64x64_q75_420.jpg (Java reference)
+Go Output:      Go weeksjpegencoder output
+Java Size:      740 bytes
+Go Size:        740 bytes
+Size Delta:     +0 bytes
+
+SHA-256 CHECKSUMS
+-----------------
+Java: 9aec310eae3504527fda1689b7be05029480d66588979adcc815be3f0d23d71f
+Go:   9aec310eae3504527fda1689b7be05029480d66588979adcc815be3f0d23d71f
+Status: MATCH
+
+DIFFERENCES BY SEGMENT (Prioritized)
+------------------------------------
+Total Differences: 0
+
+
+DETAILED DIFFERENCES
+--------------------
+(Showing first 100 differences with hex context for first 20)
+

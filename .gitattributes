@@ -1,0 +1,46 @@
+# Normalize line endings to LF for all text files
+* text=auto eol=lf
+
+# Go source files
+*.go text diff=golang
+
+# Markdown files
+*.md text
+
+# YAML files
+*.yml text
+*.yaml text
+
+# Configuration files
+*.toml text
+*.json text
+.editorconfig text
+.gitignore text
+.gitattributes text
+
+# Scripts
+*.sh text eol=lf
+
+# Go module files
+go.mod text diff=golang
+go.sum text diff=golang
+
+# Documentation
+LICENSE text
+README* text
+CONTRIBUTING* text
+CHANGELOG* text
+CITATION.cff text
+
+# Binary files
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.a binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
